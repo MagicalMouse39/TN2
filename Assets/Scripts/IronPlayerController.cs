@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class IronPlayerController : MonoBehaviour
 {
-
     public Rigidbody2D rigidbody2D;
     public int speed;
     public KeyCode w;
@@ -36,7 +35,7 @@ public class IronPlayerController : MonoBehaviour
 
     public void Move(Vector2 vector)
     {
-        vector.Scale(new Vector2(speed*Time.deltaTime, speed*Time.deltaTime));
-        rigidbody2D.AddForce(vector,ForceMode2D.Impulse);
+        vector.Scale(new Vector2(speed * Time.deltaTime, speed * Time.deltaTime));
+        rigidbody2D.AddForce(vector, ForceMode2D.Impulse);
     }
 }
